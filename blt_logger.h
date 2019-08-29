@@ -30,6 +30,29 @@
 
     #include <iostream>
 
+    /*     Single parameter functions that act as an exit for the Variadic Template Functions below     */
+
+    template <class T>
+    inline void blt_error(T message)
+    {
+        std::cout << message;
+    }
+
+
+    template <class T>
+    inline void blt_warn(T message)
+    {
+        std::cout << message;
+    }
+
+
+
+    template <class T>
+    inline void blt_info(T message)
+    {
+        std::cout << message;
+    }
+
 
     /*     Variadic Template Functions that prints the logs     */
 
@@ -82,28 +105,7 @@
     }
         
 
-    /*     Single parameter functions that act as an exit for the Variadic Template Functions above     */
 
-    template <class T>
-    inline void blt_error(T message)
-    {
-        std::cout << message;
-    }
-
-
-    template <class T>
-    inline void blt_warn(T message)
-    {
-        std::cout << message;
-    }
-
-
-
-    template <class T>
-    inline void blt_info(T message)
-    {
-        std::cout << message;
-    }
 
 
     /*    Logger level checks    */

@@ -6,11 +6,14 @@
 int main()
 {
 
-    //std::string same = std::string("a message") + std::string(3);
 
+    blt_error("This is an error ", " errors are serious ", " Error Code: ", 1234);
+    blt_error("Something went terribly wrong :(");
 
-    blt_error("This is an error ", "errors are serious ", "please notice me senpai");
-    blt_warn("This is a warning ", "warnings are not as serious ", "its not like I love you or anything ba-baka!!");
-    blt_info("This is inforamtion ", "inforamation is just information... ", "idiot");
+    blt_warn("This is a warning ", "warnings are not as serious ", "Warning Code: ", 12);
+    blt_warn("Something may be wrong :|");
+
+    blt_info("This is inforamtion ", "inforamation is just information... ", "heh", "Information code?: ", 22);
+    blt_info("Nothing wrong here, just information :)");
 
 }
